@@ -33,22 +33,22 @@
            </div>
 
            <div class="input-form">
-                <input type="number" id="totalAmt" name="creadit1" placeholder="Credits">
+                <input type="number" id="totalAmt" name="credit1" placeholder="Credits">
                 <input type="number" id="totalAmt" name="gpa1" placeholder="Subject GPA">
            </div>
 
            <div class="input-form">
-                <input type="number" id="totalAmt" name="creadit2" placeholder="Credits">
+                <input type="number" id="totalAmt" name="credit2" placeholder="Credits">
                 <input type="number" id="totalAmt" name="gpa2" placeholder="Subject GPA">
            </div>
 
            <div class="input-form">
-                <input type="number" id="totalAmt" name="creadit3" placeholder="Credits">
+                <input type="number" id="totalAmt" name="credit3" placeholder="Credits">
                 <input type="number" id="totalAmt" name="gpa3" placeholder="Subject GPA">
            </div>
 
            <div class="input-form">
-                <input type="number" id="totalAmt" name="creadit4" placeholder="Credits">
+                <input type="number" id="totalAmt" name="credit4" placeholder="Credits">
                 <input type="number" id="totalAmt" name="gpa4" placeholder="Subject GPA">
            </div>
 
