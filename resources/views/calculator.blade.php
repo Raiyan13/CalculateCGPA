@@ -26,7 +26,7 @@
     </header>
    <div class="loginForms">
        <h1>Calculate CGPA</h1>
-       <form method="post" action="submit_now">
+       <form method="post" action="show_result">
             @csrf
            <div class="input-form-semester">
                <input type="text" name="semester" placeholder="Current Semester">
