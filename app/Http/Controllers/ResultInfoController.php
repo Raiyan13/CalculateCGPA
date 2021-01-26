@@ -85,6 +85,10 @@ class ResultInfoController extends Controller
 
     public function calculate_result(Request $request)
     {
-        return $request->input();
+        $credit_1;
+        $credit_2;
+        $credit_3;
+        $credit_4;
+        return view('show');
     }
 }
