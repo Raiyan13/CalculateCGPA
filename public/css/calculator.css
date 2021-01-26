@@ -1,7 +1,12 @@
 body{ 
-    background-image: url('/images/backGroundImage.jpg');
+    width: 100vw;
+    background-image: url('/images/background10.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
     margin: 0px 0px;
     border: 0px;
+    padding: 0px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -73,7 +78,7 @@ body{
 } */
 .loginForms{
     position: absolute;
-    margin-top: 50px;
+    margin-top: 70px;
     padding-right: 5px;
     /* margin-right: 33px; */
     /* margin: 100px auto; */

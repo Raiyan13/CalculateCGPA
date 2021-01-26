@@ -36,7 +36,8 @@ class ResultInfoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $resultInfo = new resultInfo();
+        
     }
 
     /**
@@ -88,6 +89,7 @@ class ResultInfoController extends Controller
     {
         $credits = array();
         $gpa = array();
+        $current_semester = $request->input('semester');
 
         $credit1 = $request->input('credit1');
         $credit2 = $request->input('credit2');
@@ -111,6 +113,6 @@ class ResultInfoController extends Controller
 
         $helper = new Helper($credits, $gpa);
 
-        return view('show_result', ['result' => $helper->get_result()]);
+        return view('show_result', ['result' => $helper->get_result(),'semester' => $current_semester]);
     }
 }

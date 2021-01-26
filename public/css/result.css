@@ -4,7 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-image: url('/images/background5.jpg');
+    background-image: url('/images/background9.jpg');
     background-size: cover;
     background-repeat: repeat;
     background-position: center center;
@@ -28,7 +28,7 @@ body{
     backdrop-filter: blur(80px);
     text-shadow: 2px 2px 1px rgb(46, 43, 43);
     margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     /* width: 700px; */
     /* background-color: rgb(128, 122, 122); */
     /* text-align: center; */
@@ -36,6 +36,9 @@ body{
 } 
 h1 {
     font-size: 45px;
+    opacity: 2.0;
+    backdrop-filter: blur(20px);
+    padding: 10px;
   }
 /* .headerRight{
     position: absolute;
@@ -92,7 +95,7 @@ h1 {
 .btn{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
-    margin: 10px 20px;
+    margin: 5px 20px;
     width: 150px;
     height: 40px;
     border-radius: 5px;

@@ -25,13 +25,14 @@
         </div> -->
     </nav>
     <div id = "result">
-        <h1>Your CGPA is {{$result}}</h1>
+        <h1>Your CGPA in {{$semester}} semester is {{$result}}</h1>
     </div>
     <div>
-        <p>Want to calculate your CGPA?</p>
+        <h3>Want to save result?</h3>
     </div>
     <div>
-        <button onclick="location.href='start_calculator';" type="button" class="btn btn-primary">Get Started</button>
+        $data = array($semester,$result);
+        <button onclick="location.href='start_save';" type="button" class="btn btn-primary" name = "result" value = $data>Save</button>
     </div>
     
 </body>

@@ -25,3 +25,4 @@ Route::get('start_calculator',[PageController::class, 'calculator']);
 Route::get('start_home',[PageController::class, 'home']);
 Route::get('show_records',[PageController::class, 'records']);
 Route::post('show_result',[ResultInfoController::class, 'calculate_result']);
+Route::post('save_result',[ResultInfoController::class, 'store']);
