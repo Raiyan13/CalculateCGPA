@@ -6,7 +6,8 @@ class Helper
 {
     public $credits = array();
     public $gpa = array();
-    function _constructor($credits, $gpa){
+
+    function __construct($credits = array(),$gpa){
         $this->credits = $credits;
         $this->gpa = $gpa;
     }
@@ -21,8 +22,8 @@ class Helper
             $total_sum+=($this->credits[$i]*$this->gpa[$i]);
         }
 
-        $result = $total_sum/4;
-
+        $result = $total_sum/$total_credit;
+    
         return $result;
     }
 }
