@@ -122,19 +122,38 @@ h1 {
     color: white;
   }
   table.outlined { 
-      border-collapse: collapse;
-      
+    border-collapse: collapse;
     }
     
   table.outlined tr{
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
+      border-top: 1px solid #778899;
+      border-bottom: 1px solid #778899;
     }
-  th{
+    table.outlined td{
+        padding: 15px;
+    }
+  table.outlined th{
       font-style: bold;
       width: fit-content;
+      padding: 15px;
+      border-bottom: 2px solid #778899;
   }
   #table-div{
-      padding: 50px;
+      padding-right: 10px;
+      margin-left: 60px;
+      margin-top: 70px;
       font-size: 20px;
+      overflow-y:scroll;
+      height: 420px;
+      width: fit-content;
+  }
+  .act-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #7aa8b7;
+    border-radius: 6px;
+    outline: none;
   }

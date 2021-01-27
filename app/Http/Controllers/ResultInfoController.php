@@ -90,9 +90,9 @@ class ResultInfoController extends Controller
      * @param  \App\Models\resultInfo  $resultInfo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(resultInfo $resultInfo)
+    public function destroy(resultInfo $resultInfo, $id)
     {
-        //
+        resultInfo::destroy('id',$id);
     }
 
     public function calculate_result(Request $request)

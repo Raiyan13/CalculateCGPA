@@ -24,5 +24,6 @@ Route::get('/', function () {
 Route::get('start_calculator',[PageController::class, 'calculator']);
 Route::get('start_home',[PageController::class, 'home']);
 Route::get('show_records',[PageController::class, 'records']);
+Route::get('delete_result/{id}',[ResultInfoController::class, 'destroy']);
 Route::post('show_result',[ResultInfoController::class, 'calculate_result']);
 Route::post('save_result',[ResultInfoController::class, 'store']);
