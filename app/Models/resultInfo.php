@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class resultInfo extends Model
 {
     use HasFactory;
+    protected $fillable = ['semester','cgpa'];
 }

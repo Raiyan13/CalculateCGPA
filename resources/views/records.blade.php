@@ -27,6 +27,12 @@
             <strong>Deleted Successfully!</strong> Selected Result Deleted Successfully From Records.
             </div>
     @endif
+    @if(Session::has('updated'))
+            <div class="deleted">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Updated Successfully!</strong> Edited Result Updated Successfully In Records.
+            </div>
+    @endif
     </nav>
 
     <div id = "table-div">
