@@ -31,8 +31,15 @@
         <h3>Want to save result?</h3>
     </div>
     <div>
-        $data = array($semester,$result);
-        <button onclick="location.href='start_save';" type="button" class="btn btn-primary" name = "result" value = $data>Save</button>
+        <form method="post" action="save_result">
+        @csrf
+        <?php
+            session_start(); 
+            $_SESSION['cgpa'] = $result; 
+            $_SESSION['semester'] = $semester;
+        ?>
+        <button type="submit" class="btn btn-primary">Save</button>
+        </form>
     </div>
     
 </body>

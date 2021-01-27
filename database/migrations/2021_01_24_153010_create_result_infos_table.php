@@ -16,7 +16,7 @@ class CreateResultInfosTable extends Migration
         Schema::create('result_infos', function (Blueprint $table) {
             $table->id();
             $table->string('semester');
-            $table->double('cgpa');
+            $table->string('cgpa');
             $table->timestamps();
         });
     }

@@ -36,8 +36,14 @@ class ResultInfoController extends Controller
      */
     public function store(Request $request)
     {
-        $resultInfo = new resultInfo();
         
+        session_start();
+    
+        $data = $request->input('result');
+        $resultInfo = new resultInfo();
+        $resultInfo->semester = $_SESSION['semester'];
+        $resultInfo->cgpa = $_SESSION['cgpa'];
+        $resultInfo->save();
     }
 
     /**
