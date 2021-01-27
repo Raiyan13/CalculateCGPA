@@ -140,20 +140,36 @@ h1 {
   }
   #table-div{
       padding-right: 10px;
-      margin-left: 60px;
+      margin-left: 30px;
       margin-top: 70px;
       font-size: 20px;
       overflow-y:scroll;
       height: 420px;
       width: fit-content;
   }
-  .act-button {
+  .del-button {
     display: inline-block;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
-    background-color: #7aa8b7;
-    border-radius: 6px;
+    background-color: #3399FF;
+    border-radius: 10px;
     outline: none;
+  }
+  .del-button:hover {
+    background-color: red;
+  }
+  .update-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3399FF;
+    border-radius: 10px;
+    outline: none;
+  }
+  .update-button:hover {
+    background-color: #00CC00;
   }

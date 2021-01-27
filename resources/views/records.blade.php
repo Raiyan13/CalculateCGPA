@@ -32,8 +32,8 @@
                 <th>CGPA</th>
                 <th>Entry Time</th>
                 <th>Update Time</th>
-                <th></th>
-                <th></th>
+                <th>Action</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -43,59 +43,10 @@
                 <td>3.50</td>
                 <td>10PM</td>
                 <td>11PM</td>
-                <td>
-                <a class="act-button" href="delete_result/{{4}}">Delete</a>
-                </td>
+                <td><a class="update-button" href="update_result/{{4}}">Update</a></td>
+                <td><a class="del-button" href="delete_result/{{4}}">Delete</a></td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>2nd</td>
-                <td>3.50</td>
-                <td>10PM</td>
-                <td>11PM</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>2nd</td>
-                <td>3.50</td>
-                <td>10PM</td>
-                <td>11PM</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>2nd</td>
-                <td>3.50</td>
-                <td>10PM</td>
-                <td>11PM</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>2nd</td>
-                <td>3.50</td>
-                <td>10PM</td>
-                <td>11PM</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>2nd</td>
-                <td>3.50</td>
-                <td>10PM</td>
-                <td>11PM</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>2nd</td>
-                <td>3.50</td>
-                <td>10PM</td>
-                <td>11PM</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>2nd</td>
-                <td>3.50</td>
-                <td>10PM</td>
-                <td>11PM</td>
-            </tr>
+            
         </tbody>
         </table>
     </div>
