@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
 
 class PageController extends Controller
 {
@@ -18,6 +19,7 @@ class PageController extends Controller
 
     public function records()
     {
+        Session::flash('unsaved', 'This is a save message!');
         return view('records');
     }
 }

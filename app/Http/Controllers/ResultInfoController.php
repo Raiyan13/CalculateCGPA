@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\resultInfo;
 use Illuminate\Http\Request;
 use App\Helpers\Helper;
+use Session;
 
 class ResultInfoController extends Controller
 {
@@ -44,6 +45,9 @@ class ResultInfoController extends Controller
         $resultInfo->semester = $_SESSION['semester'];
         $resultInfo->cgpa = $_SESSION['cgpa'];
         $resultInfo->save();
+
+        Session::flash('saved', 'This is a save message!');
+        return view('records');
     }
 
     /**

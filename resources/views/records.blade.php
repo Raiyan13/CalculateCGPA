@@ -16,5 +16,14 @@
             </ul>
         </div>
     </nav>
+    
+    @if(Session::has('saved'))
+            <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Saved Successfully!</strong> Result saved successfully to records.
+            </div>
+    @endif
+    
+    
 </body>
 </html>
