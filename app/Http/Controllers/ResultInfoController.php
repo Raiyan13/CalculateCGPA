@@ -47,7 +47,7 @@ class ResultInfoController extends Controller
         $resultInfo->save();
 
         Session::flash('saved', 'This is a save message!');
-        return view('records');
+        return view('records')->with('allResult',resultInfo::all());
     }
 
     /**
@@ -58,7 +58,8 @@ class ResultInfoController extends Controller
      */
     public function show(resultInfo $resultInfo)
     {
-        //
+        Session::flash('unsaved', 'This is a save message!');
+        return view('records')->with('allResult',resultInfo::all());
     }
 
     /**
