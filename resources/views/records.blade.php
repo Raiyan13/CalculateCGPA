@@ -53,7 +53,7 @@
                     <td>{{$i++}}</td>
                     <td>{{$resultNow->semester}}</td>
                     <td>{{$resultNow->cgpa}}</td>
-                    <td>{{$resultNow->updated_at}}</td>
+                    <td id = "date">{{$resultNow->updated_at}}</td>
                     <td><a class="update-button" href="update_result/{{$resultNow->id}}">Update</a></td>
                     <td><a class="del-button" href="delete_result/{{$resultNow->id}}">Delete</a></td>
                 </tr>

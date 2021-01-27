@@ -131,20 +131,22 @@ h1 {
     }
     table.outlined td{
         padding: 15px;
+        text-align: center;
     }
   table.outlined th{
       font-style: bold;
       width: fit-content;
+      text-align: center;
       padding: 15px;
       border-bottom: 2px solid #778899;
   }
   #table-div{
       padding-right: 10px;
-      margin-left: 30px;
-      margin-top: 70px;
-      font-size: 20px;
+      margin-left: 40px;
+      margin-top: 50px;
+      font-size: 18px;
       overflow-y:scroll;
-      height: 420px;
+      height: 500px;
       width: fit-content;
   }
   .del-button {
@@ -172,4 +174,8 @@ h1 {
   }
   .update-button:hover {
     background-color: #00CC00;
+  }
+  #date{
+    font-size: 17px;
+    padding: 20px;
   }
