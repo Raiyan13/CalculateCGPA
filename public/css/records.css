@@ -8,7 +8,6 @@ body{
     margin: 0px 0px;
     padding: 0;
     border: 0px;
-    color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* .headerLeft{
@@ -121,4 +120,21 @@ h1 {
   
   .closebtn:hover {
     color: white;
+  }
+  table.outlined { 
+      border-collapse: collapse;
+      
+    }
+    
+  table.outlined tr{
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+  th{
+      font-style: bold;
+      width: fit-content;
+  }
+  #table-div{
+      padding: 50px;
+      font-size: 20px;
   }
