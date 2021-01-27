@@ -18,9 +18,15 @@
     </nav>
     
     @if(Session::has('saved'))
-            <div class="alert">
+            <div class="saved">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-            <strong>Saved Successfully!</strong> Result saved successfully to records.
+            <strong>Saved Successfully!</strong> Result Saved Successfully To Records.
+            </div>
+    @endif
+    @if(Session::has('deleted'))
+            <div class="deleted">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Deleted Successfully!</strong> Selected Result Deleted Successfully From Records.
             </div>
     @endif
     <div id = "table-div">

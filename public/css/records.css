@@ -101,9 +101,15 @@ h1 {
 #welcome{
    margin-bottom: 50px;
 }
-.alert {
+.saved {
     padding: 20px;
     background-color: #00C851;
+    color: white;
+  }
+
+  .deleted {
+    padding: 20px;
+    background-color: #FF0000;
     color: white;
   }
   
@@ -143,7 +149,7 @@ h1 {
   #table-div{
       padding-right: 10px;
       margin-left: 40px;
-      margin-top: 50px;
+      margin-top: 60px;
       font-size: 18px;
       overflow-y:scroll;
       height: 500px;

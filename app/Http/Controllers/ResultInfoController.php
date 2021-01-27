@@ -94,6 +94,8 @@ class ResultInfoController extends Controller
     public function destroy(resultInfo $resultInfo, $id)
     {
         resultInfo::destroy('id',$id);
+        Session::flash('deleted', 'This is a delete message!');
+        return redirect('show_records')->with('allResult',resultInfo::all());
     }
 
     public function calculate_result(Request $request)
