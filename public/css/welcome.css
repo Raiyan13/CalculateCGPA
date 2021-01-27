@@ -27,8 +27,7 @@ body{
     /* border: 2px solid black; */
     backdrop-filter: blur(80px);
     text-shadow: 2px 2px 1px rgb(46, 43, 43);
-    margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     /* width: 700px; */
     /* background-color: rgb(128, 122, 122); */
     /* text-align: center; */

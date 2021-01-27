@@ -15,9 +15,7 @@
                 <li> <a href="show_records" class="homeTag">Result Record</a></li>
             </ul>
         </div>
-    </nav>
-    
-    @if(Session::has('saved'))
+        @if(Session::has('saved'))
             <div class="saved">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
             <strong>Saved Successfully!</strong> Result Saved Successfully To Records.
@@ -29,6 +27,8 @@
             <strong>Deleted Successfully!</strong> Selected Result Deleted Successfully From Records.
             </div>
     @endif
+    </nav>
+
     <div id = "table-div">
         <table id = "data-table" class="outlined">
         <thead>

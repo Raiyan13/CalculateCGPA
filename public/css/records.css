@@ -129,6 +129,7 @@ h1 {
   }
   table.outlined { 
     border-collapse: collapse;
+    backdrop-filter: blur(80px);
     }
     
   table.outlined tr{
@@ -149,10 +150,10 @@ h1 {
   #table-div{
       padding-right: 10px;
       margin-left: 40px;
-      margin-top: 60px;
+      margin-top: 70px;
       font-size: 18px;
       overflow-y:scroll;
-      height: 500px;
+      height: 480px;
       width: fit-content;
   }
   .del-button {
