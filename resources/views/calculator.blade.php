@@ -24,6 +24,8 @@
             This is right
         </div> -->
     </header>
+
+    <div class="container-div">
    <div class="loginForms">
        <h1>Calculate CGPA</h1>
        <form method="post" action="show_result">
@@ -57,6 +59,70 @@
            </div>
 
        </form>
+    </div>
+    <div id = "table-div">
+        <table id = "data-table" class="outlined">
+        <thead>
+            <tr>
+                <th>Class interval</th>
+                <th>Letter grade</th>
+                <th>Grade point</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>80-100</th>
+                <th>A+</th>
+                <th>4.00</th>
+            </tr>
+            <tr>
+                <th>75-79</th>
+                <th>A</th>
+                <th>3.75</th>
+            </tr>
+            <tr>
+                <th>70-74</th>
+                <th>A-</th>
+                <th>3.50</th>
+            </tr>
+            <tr>
+                <th>65-69</th>
+                <th>B+</th>
+                <th>3.25</th>
+            </tr>
+            <tr>
+                <th>60-64</th>
+                <th>B</th>
+                <th>3.00</th>
+            </tr>
+            <tr>
+                <th>55-59</th>
+                <th>B-</th>
+                <th>2.75</th>
+            </tr>
+            <tr>
+                <th>50-54</th>
+                <th>C+</th>
+                <th>2.50</th>
+            </tr>
+            <tr>
+                <th>45-49</th>
+                <th>C</th>
+                <th>2.25</th>
+            </tr>
+            <tr>
+                <th>40-44</th>
+                <th>D</th>
+                <th>2.00</th>
+            </tr>
+            <tr>
+                <th>0-39</th>
+                <th>F</th>
+                <th>0.00</th>
+            </tr>
+        </tbody>
+        </table>
+    </div>
    </div>
 </body>
 </html>
