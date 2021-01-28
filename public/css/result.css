@@ -65,7 +65,7 @@ h1 {
     display: inline-block;
 }
 .sideBar li a:hover,.sideBar li a.homeTag{
-    text-shadow: 2px 2px rgb(247, 175, 41);
+    text-shadow: 2px 1px rgb(247, 175, 41);
     /* text-decoration: underline; */
 }
 #searchBar{
