@@ -174,9 +174,11 @@ h1 {
       margin-top: 70px;
       font-size: 18px;
       height: 450px;
+      overflow: hidden;
       width: fit-content;
   }
   #table-div:hover{
+      height: 450px;
       overflow-y: auto;
   }
   .del-button {
