@@ -15,13 +15,6 @@ body{
     color: white;
     font-family: 'Baloo Bhai 2', cursive;
 }
-/* .headerLeft{
-    display: inline-block;
-    border: 2px solid white;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-} */
 .headerMid{
     display: inline-block;
     width: 100vw;
@@ -38,16 +31,16 @@ body{
 h1 {
     font-size: 45px;
     opacity: 2.0;
+    border-radius: 10px;
+    background-color: white;
     backdrop-filter: blur(20px);
-    padding: 10px;
+    color: #30475e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #30475e;
   }
-/* .headerRight{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    display: inline-block;
-    border: 2px solid white;
-} */
 .sideBar{
     list-style-type: none;
     /* text-align: center; */
@@ -84,11 +77,9 @@ h1 {
 #searchBar::placeholder{
     color:rgb(54, 53, 53);
 }
-/* .loginForms h1{
-    margin: auto;
-} */
+
 .btn:hover{
-    backdrop-filter: blur(300px);
+    backdrop-filter: blur(10px);
     text-shadow: 1px 1px yellowgreen;
     font-size: 22px;
     border-color: rgb(217, 235, 186);
@@ -103,7 +94,7 @@ h1 {
     border-color: rgb(255, 255, 255);
     background-color: transparent;
     color: white;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     font-weight: bold;
     cursor: pointer;
 }
