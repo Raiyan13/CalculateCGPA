@@ -81,10 +81,11 @@ class ResultInfoController extends Controller
      * @param  \App\Models\resultInfo  $resultInfo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, resultInfo $resultInfo, $id, $cgpa)
+    public function update(Request $request, resultInfo $resultInfo, $id)
     {
 
         $resultInfo = resultInfo::find($id);
+        $cgpa = ResultInfoController::calculate_result_update($request, $resultInfo, $id);
 
         $resultInfo->update(['semester' => $request->input('semester'), 'cgpa' => $cgpa]);
 
@@ -92,7 +93,7 @@ class ResultInfoController extends Controller
 
         session_start();
         Session::flash('updated', 'This is a update message!');
-        return view('records')->with('allResult',resultInfo::all());
+        return redirect('show_records')->with('allResult',resultInfo::all());
     }
 
     /**
@@ -170,6 +171,6 @@ class ResultInfoController extends Controller
 
         $helper = new Helper($credits, $gpa);
 
-        return ResultInfoController::update($request, $resultInfo, $id, $helper->get_result());
+        return $helper->get_result();
     }
 }

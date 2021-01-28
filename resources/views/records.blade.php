@@ -10,9 +10,9 @@
     <nav class="header">
         <div class="headerMid">
             <ul class="sideBar">
-                <li> <a href="start_home">Home</a></li>
-                <li> <a href="start_calculator">Calculator</a></li>
-                <li> <a href="show_records" class="homeTag">Result Record</a></li>
+                <li class="nav-button"> <a href="start_home">Home</a></li>
+                <li class="nav-button"> <a href="start_calculator">Calculator</a></li>
+                <li class="nav-button"> <a href="show_records" class="homeTag">Result Record</a></li>
             </ul>
         </div>
         @if(Session::has('saved'))
@@ -28,7 +28,7 @@
             </div>
     @endif
     @if(Session::has('updated'))
-            <div class="deleted">
+            <div class="updated">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
             <strong>Updated Successfully!</strong> Edited Result Updated Successfully In Records.
             </div>

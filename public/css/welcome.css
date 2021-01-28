@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
 body{ 
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@ body{
     padding: 0;
     border: 0px;
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Baloo Bhai 2', cursive;
 }
 /* .headerLeft{
     display: inline-block;
@@ -89,7 +90,7 @@ h1 {
     border-color: rgb(217, 235, 186);
 }
 .btn{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Baloo Bhai 2', cursive;
     font-size: 20px;
     margin: 10px 20px;
     width: 150px;

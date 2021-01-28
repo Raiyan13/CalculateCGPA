@@ -28,4 +28,4 @@ Route::get('update_result/{id}',[ResultInfoController::class, 'edit']);
 Route::get('delete_result/{id}',[ResultInfoController::class, 'destroy']);
 Route::post('show_result',[ResultInfoController::class, 'calculate_result']);
 Route::post('save_result',[ResultInfoController::class, 'store']);
-Route::patch('save_update/{id}',[ResultInfoController::class, 'calculate_result_update']);
+Route::patch('save_update/{id}',[ResultInfoController::class, 'update']);
