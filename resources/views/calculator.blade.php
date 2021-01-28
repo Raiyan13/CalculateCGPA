@@ -33,23 +33,23 @@
            </div>
 
            <div class="input-form">
-                <input type="number" id="totalAmt" name="credit1" placeholder="Credits">
-                <input type="number" id="totalAmt" name="gpa1" placeholder="Subject GPA">
+                <input type="number" name="credit1" placeholder="Credits" step="0.5" min="1">
+                <input type="number" name="gpa1" placeholder="Subject GPA" step="0.25" min="0" max="4">
            </div>
 
            <div class="input-form">
-                <input type="number" id="totalAmt" name="credit2" placeholder="Credits">
-                <input type="number" id="totalAmt" name="gpa2" placeholder="Subject GPA">
+                <input type="number" name="credit2" placeholder="Credits" step="0.5" min="1">
+                <input type="number" name="gpa2" placeholder="Subject GPA" step="0.25" min="0" max="4">
            </div>
 
            <div class="input-form">
-                <input type="number" id="totalAmt" name="credit3" placeholder="Credits">
-                <input type="number" id="totalAmt" name="gpa3" placeholder="Subject GPA">
+                <input type="number" name="credit3" placeholder="Credits" step="0.5" min="1">
+                <input type="number" name="gpa3" placeholder="Subject GPA" step="0.25" min="0" max="4">
            </div>
 
            <div class="input-form">
-                <input type="number" id="totalAmt" name="credit4" placeholder="Credits">
-                <input type="number" id="totalAmt" name="gpa4" placeholder="Subject GPA">
+                <input type="number" name="credit4" placeholder="Credits" step="0.5" min="1">
+                <input type="number" name="gpa4" placeholder="Subject GPA" step="0.25" min="0" max="4">
            </div>
 
            <div>

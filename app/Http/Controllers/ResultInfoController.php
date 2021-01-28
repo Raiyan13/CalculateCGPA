@@ -140,7 +140,7 @@ class ResultInfoController extends Controller
 
         $helper = new Helper($credits, $gpa);
 
-        return view('show_result', ['result' => $helper->get_result(),'semester' => $current_semester]);
+        return view('show_result', ['result' => number_format($helper->get_result(),2),'semester' => $current_semester]);
     }
 
     public function calculate_result_update(Request $request, resultInfo $resultInfo, $id){
@@ -171,6 +171,6 @@ class ResultInfoController extends Controller
 
         $helper = new Helper($credits, $gpa);
 
-        return $helper->get_result();
+        return number_format($helper->get_result(),2);
     }
 }
