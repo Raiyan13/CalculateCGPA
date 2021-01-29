@@ -22,4 +22,9 @@ class PageController extends Controller
         Session::flash('unsaved', 'This is a save message!');
         return view('records');
     }
+
+    public function about()
+    {
+        return view('about');
+    }
 }

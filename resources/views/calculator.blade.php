@@ -19,6 +19,7 @@
                 <li> <a href="start_home">Home</a></li>
                 <li> <a href="start_calculator" class="homeTag">Calculator</a></li>
                 <li> <a href="show_records">Result Record</a></li>
+                <li> <a href="show_about">About</a></li>
             </ul>
         </div>
 

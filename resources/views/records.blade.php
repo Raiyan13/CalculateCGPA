@@ -15,6 +15,7 @@
                 <li class="nav-button"> <a href="start_home">Home</a></li>
                 <li class="nav-button"> <a href="start_calculator">Calculator</a></li>
                 <li class="nav-button"> <a href="show_records" class="homeTag">Result Record</a></li>
+                <li class="nav-button"> <a href="show_about">About</a></li>
             </ul>
         </div>
         @if(Session::has('saved'))

@@ -23,6 +23,7 @@ Route::get('/', function () {
 
 Route::get('start_calculator',[PageController::class, 'calculator']);
 Route::get('start_home',[PageController::class, 'home']);
+Route::get('show_about',[PageController::class, 'about']);
 Route::get('show_records',[ResultInfoController::class, 'show']);
 Route::get('update_result/{id}',[ResultInfoController::class, 'edit']);
 Route::get('delete_result/{id}',[ResultInfoController::class, 'destroy']);
