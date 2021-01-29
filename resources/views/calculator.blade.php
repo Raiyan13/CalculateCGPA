@@ -26,7 +26,7 @@
     </header>
 
     <div class="container-div">
-   <div class="loginForms">
+   <div class="all-input-form">
        <h1>Calculate CGPA</h1>
        <form method="post" action="show_result">
             @csrf

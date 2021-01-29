@@ -27,7 +27,7 @@
         </div> -->
     </header>
     <div class="container-div">
-        <div class="loginForms">
+        <div class="all-input-form">
             <h1>Update CGPA</h1>
             <form method="post" action="../save_update/{{$allResult->id}}">
                 @csrf

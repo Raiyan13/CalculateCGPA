@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
-body{ 
+body {
     width: 100vw;
     height: 100vh;
     background-image: url('/images/backgroundu.jpg');
@@ -13,7 +13,7 @@ body{
     font-family: 'Baloo Bhai 2', cursive;
 }
 
-.headerMid{
+.headerMid {
     display: block;
     /* border: 2px solid black; */
     backdrop-filter: blur(80px);
@@ -23,7 +23,8 @@ body{
     /* background-color: rgb(128, 122, 122); */
     /* text-align: center; */
     font-size: 20px;
-} 
+}
+
 
 /* .headerRight{
     position: absolute;
@@ -32,27 +33,33 @@ body{
     display: inline-block;
     border: 2px solid white;
 } */
-.sideBar{
+
+.sideBar {
     list-style-type: none;
     /* text-align: center; */
     display: inline-block;
 }
-.sideBar li{
+
+.sideBar li {
     text-decoration: none;
     color: white;
     display: inline-block;
     margin: 10px;
 }
-.sideBar li a{
+
+.sideBar li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: inline-block;
 }
-.sideBar li a:hover,.sideBar li a.homeTag{
+
+.sideBar li a:hover,
+.sideBar li a.homeTag {
     text-shadow: 2px 1px rgb(247, 175, 41);
     /* text-decoration: underline; */
 }
-#searchBar{
+
+#searchBar {
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 5px;
@@ -62,16 +69,19 @@ body{
     position: absolute;
     right: 112px;
     top: 25px;
-    background-color: rgb(214, 211, 206);   
-      
+    background-color: rgb(214, 211, 206);
 }
-#searchBar::placeholder{
-    color:rgb(54, 53, 53);
+
+#searchBar::placeholder {
+    color: rgb(54, 53, 53);
 }
+
+
 /* .loginForms h1{
     margin: auto;
 } */
-.loginForms{
+
+.all-input-form {
     position: absolute;
     margin-top: 70px;
     padding-right: 5px;
@@ -89,11 +99,13 @@ body{
     text-shadow: 2px 2px rgb(0, 0, 0);
     box-shadow: -3px -4px 10px 5px rgb(225 225 225);
 }
-.input-form{
+
+.input-form {
     display: flex;
     flex-direction: row;
 }
-.input-form input{
+
+.input-form input {
     margin: 5px 0px 5px 5px;
     width: 170px;
     height: 40px;
@@ -102,7 +114,8 @@ body{
     text-align: center;
     font-size: 15px;
 }
-#combo-box{
+
+#combo-box {
     margin: 5px 0px 5px 5px;
     width: 175px;
     height: 46px;
@@ -112,12 +125,14 @@ body{
     text-align: center;
     font-size: 15px;
 }
-#combo-box{ 
+
+#combo-box {
     text-indent: 50%;
     font-family: 'Baloo Bhai 2', cursive;
-    text-align: center; 
+    text-align: center;
 }
-.input-form-semester input{
+
+.input-form-semester input {
     width: 355px;
     height: 40px;
     margin-left: 5px;
@@ -127,14 +142,16 @@ body{
     text-align: center;
     font-size: 15px;
 }
-.btn:hover{
+
+.btn:hover {
     backdrop-filter: blur(300px);
     text-shadow: 1px 1px #c87941;
     font-size: 22px;
     border-color: white;
     border-width: 3px;
 }
-.btn{
+
+.btn {
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 20px;
     margin: 20px 0px;
@@ -147,47 +164,49 @@ body{
     backdrop-filter: blur(30px);
     font-weight: bold;
     cursor: pointer;
-    
 }
-.container-div{
+
+.container-div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-table.outlined { 
+
+table.outlined {
     border-collapse: separate;
     color: #d8d3cd;
     font-size: 16px;
     backdrop-filter: blur(25px);
     text-shadow: 1px 1px black;
     /* background-color: #495464; */
-    }
-    
-  table.outlined tr{
-      /* border-top: 1px solid #9ba4b4;
+}
+
+table.outlined tr {
+    /* border-top: 1px solid #9ba4b4;
       border-bottom: 1px solid #9ba4b4;
       border-right: 1px solid #9ba4b4;
       border-left: 1px solid #9ba4b4; */
-      border: 1px solid #9ba4b4;
-      border-radius: 10px;
-    }
-    table.outlined td{
-        padding: 5px;
-        
-    }
-  table.outlined th{
-      font-style: bold;
-      width: fit-content;
-      
-      padding: 5px;
-      border-bottom: 2px solid #9ba4b4;
-  }
-  #table-div{
-      padding-right: 0px;
-      margin-left: 725px;
-      margin-top: 70px;
-      font-size: 14px;
-      height: fit-content;
-      overflow: hidden;
-      width: fit-content;
-  }
+    border: 1px solid #9ba4b4;
+    border-radius: 10px;
+}
+
+table.outlined td {
+    padding: 5px;
+}
+
+table.outlined th {
+    font-style: bold;
+    width: fit-content;
+    padding: 5px;
+    border-bottom: 2px solid #9ba4b4;
+}
+
+#table-div {
+    padding-right: 0px;
+    margin-left: 725px;
+    margin-top: 70px;
+    font-size: 14px;
+    height: fit-content;
+    overflow: hidden;
+    width: fit-content;
+}
