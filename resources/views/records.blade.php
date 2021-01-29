@@ -40,43 +40,38 @@
         @endif
     </nav>
 
-    <div id="table-div">
-        <table id="data-table" class="outlined">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Semester</th>
-                    <th>CGPA</th>
-                    <th>Last Updated</th>
-                    <th>Action</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- <tr>
-                <td>1</td>
-                <td>2nd</td>
-                <td>3.50</td>
-                <td>10PM</td>
-                <td>11PM</td>
-                <td><a class="update-button" href="update_result/{{4}}">Update</a></td>
-                <td><a class="del-button" href="delete_result/{{4}}">Delete</a></td>
-            </tr> -->
-                @php
-                $i = 1
-                @endphp
-                @foreach($allResult as $resultNow)
-                <tr>
-                    <td>{{$i++}}</td>
-                    <td>{{$resultNow->semester}}</td>
-                    <td>{{$resultNow->cgpa}}</td>
-                    <td id="date">{{$resultNow->updated_at}}</td>
-                    <td><a class="update-button" href="update_result/{{$resultNow->id}}">Update</a></td>
-                    <td><a class="del-button" href="delete_result/{{$resultNow->id}}">Delete</a></td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
+    <div class="container-div">
+        <div id="table-div">
+            <table id="data-table" class="outlined">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Semester</th>
+                        <th>Calculated CGPA</th>
+                        <th>Last Updated</th>
+                        <th>Creation Date</th>
+                        <th>Action Update</th>
+                        <th>Action Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @php
+                    $i = 1
+                    @endphp
+                    @foreach($allResult as $resultNow)
+                    <tr>
+                        <td>{{$i++}}</td>
+                        <td>{{$resultNow->semester}}</td>
+                        <td>{{$resultNow->cgpa}}</td>
+                        <td id="date">{{$resultNow->updated_at}}</td>
+                        <td id="date">{{$resultNow->created_at}}</td>
+                        <td><a class="update-button" href="update_result/{{$resultNow->id}}">Update</a></td>
+                        <td><a class="del-button" href="delete_result/{{$resultNow->id}}">Delete</a></td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 
