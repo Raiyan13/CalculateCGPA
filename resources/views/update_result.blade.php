@@ -16,9 +16,9 @@
 
         <div class="headerMid">
             <ul class="sideBar">
-                <li> <a href="start_home">Home</a></li>
-                <li> <a href="start_calculator">Calculator</a></li>
-                <li> <a href="show_records">Result Record</a></li>
+                <li> <a href="/start_home">Home</a></li>
+                <li> <a href="/start_calculator">Calculator</a></li>
+                <li> <a href="/show_records">Result Record</a></li>
             </ul>
         </div>
 
