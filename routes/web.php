@@ -8,12 +8,12 @@ use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Project CalculateCGPA
 |--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| Made by S.m. Tahmin Kabir Raiyan;
+| ID: 181-115-006; Batch 44th; Section: A;
+| Metropolitan University, Sylhet
+| Web Programming Course Project
 |
 */
 

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url('/css/welcome.css') }}" />
     <title>CalculateCGPA</title>
-</head>   
+</head>
+
 <body>
     <nav class="header">
         <!-- <div class="headerLeft">
@@ -24,7 +26,7 @@
             This is right
         </div> -->
     </nav>
-    <div id = "welcome">
+    <div id="welcome">
         <h1>Welcome To CalculateCGPA!</h1>
     </div>
     <div>
@@ -33,6 +35,7 @@
     <div>
         <button onclick="location.href='start_calculator';" type="button" class="btn btn-primary">Get Started</button>
     </div>
-    
+
 </body>
+
 </html>

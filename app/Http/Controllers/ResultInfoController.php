@@ -37,9 +37,9 @@ class ResultInfoController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         session_start();
-    
+
         $data = $request->input('result');
         $resultInfo = new resultInfo();
         $resultInfo->semester = $_SESSION['semester'];
@@ -47,7 +47,7 @@ class ResultInfoController extends Controller
         $resultInfo->save();
 
         Session::flash('saved', 'This is a save message!');
-        return redirect('show_records')->with('allResult',resultInfo::all());
+        return redirect('show_records')->with('allResult', resultInfo::all());
         Session::destroy('saved');
         Session::flush();
     }
@@ -62,7 +62,7 @@ class ResultInfoController extends Controller
     {
         session_start();
         Session::flash('unsaved', 'This is a save message!');
-        return view('records')->with('allResult',resultInfo::all());
+        return view('records')->with('allResult', resultInfo::all());
     }
 
     /**
@@ -95,7 +95,7 @@ class ResultInfoController extends Controller
 
         session_start();
         Session::flash('updated', 'This is a update message!');
-        return redirect('show_records')->with('allResult',resultInfo::all());
+        return redirect('show_records')->with('allResult', resultInfo::all());
     }
 
     /**
@@ -108,10 +108,10 @@ class ResultInfoController extends Controller
     {
         session_start();
 
-        resultInfo::destroy('id',$id);
-    
+        resultInfo::destroy('id', $id);
+
         Session::flash('deleted', 'This is a delete message!');
-        return redirect('show_records')->with('allResult',resultInfo::all());
+        return redirect('show_records')->with('allResult', resultInfo::all());
     }
 
     public function calculate_result(Request $request)
@@ -142,10 +142,11 @@ class ResultInfoController extends Controller
 
         $helper = new Helper($credits, $gpa);
 
-        return view('show_result', ['result' => number_format($helper->get_result(),2),'semester' => $current_semester]);
+        return view('show_result', ['result' => number_format($helper->get_result(), 2), 'semester' => $current_semester]);
     }
 
-    public function calculate_result_update(Request $request, resultInfo $resultInfo, $id){
+    public function calculate_result_update(Request $request, resultInfo $resultInfo, $id)
+    {
 
         $credits = array();
         $gpa = array();
@@ -173,6 +174,6 @@ class ResultInfoController extends Controller
 
         $helper = new Helper($credits, $gpa);
 
-        return number_format($helper->get_result(),2);
+        return number_format($helper->get_result(), 2);
     }
 }

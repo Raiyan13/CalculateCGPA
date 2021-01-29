@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url('/css/result.css') }}" />
     <title>Calculated Result</title>
-</head>   
+</head>
+
 <body>
     <nav class="header">
         <!-- <div class="headerLeft">
@@ -24,7 +26,7 @@
             This is right
         </div> -->
     </nav>
-    <div id = "result">
+    <div id="result">
         <h1>Your CGPA in {{$semester}} semester is {{$result}}</h1>
     </div>
     <div>
@@ -32,15 +34,16 @@
     </div>
     <div>
         <form method="post" action="save_result">
-        @csrf
-        <?php
-            session_start(); 
-            $_SESSION['cgpa'] = $result; 
+            @csrf
+            <?php
+            session_start();
+            $_SESSION['cgpa'] = $result;
             $_SESSION['semester'] = $semester;
-        ?>
-        <button type="submit" class="btn btn-primary">Save</button>
+            ?>
+            <button type="submit" class="btn btn-primary">Save</button>
         </form>
     </div>
-    
+
 </body>
+
 </html>

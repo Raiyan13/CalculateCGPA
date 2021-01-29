@@ -27,5 +27,3 @@ class Helper
         return $result;
     }
 }
-
-?>
