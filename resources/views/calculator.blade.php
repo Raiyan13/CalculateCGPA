@@ -66,22 +66,70 @@
             @endif -->
            <div class="input-form">
                 <input type="number" name="credit1" placeholder="Credits" step="0.5" min="1" required>
-                <input type="number" name="gpa1" placeholder="Subject GPA" step="0.25" min="0" max="4" required>
+                <!-- <input type="number" name="gpa1" placeholder="Grade Point" step="0.25" min="0" max="4" required> -->
+                <select name="gpa1" id="combo-box" required>
+                    <option value="4.00">A+</option>
+                    <option value="3.75">A</option>
+                    <option value="3.50">A-</option>
+                    <option value="3.25">B+</option>
+                    <option value="3.00">B</option>
+                    <option value="2.75">B-</option>
+                    <option value="2.50">C+</option>
+                    <option value="2.25">C</option>
+                    <option value="2.00">D</option>
+                    <option value="0.00">F</option>
+                </select>
            </div>
 
            <div class="input-form">
                 <input type="number" name="credit2" placeholder="Credits" step="0.5" min="1" required>
-                <input type="number" name="gpa2" placeholder="Subject GPA" step="0.25" min="0" max="4" required>
+                <!-- <input type="number" name="gpa2" placeholder="Grade Point" step="0.25" min="0" max="4" required> -->
+                <select name="gpa2" id="combo-box" required>
+                    <option value="4.00">A+</option>
+                    <option value="3.75">A</option>
+                    <option value="3.50">A-</option>
+                    <option value="3.25">B+</option>
+                    <option value="3.00">B</option>
+                    <option value="2.75">B-</option>
+                    <option value="2.50">C+</option>
+                    <option value="2.25">C</option>
+                    <option value="2.00">D</option>
+                    <option value="0.00">F</option>
+                </select>
            </div>
 
            <div class="input-form">
                 <input type="number" name="credit3" placeholder="Credits" step="0.5" min="1" required>
-                <input type="number" name="gpa3" placeholder="Subject GPA" step="0.25" min="0" max="4" required>
+                <!-- <input type="number" name="gpa3" placeholder="Grade Point" step="0.25" min="0" max="4" required> -->
+                <select name="gpa3" id="combo-box" required>
+                    <option value="4.00">A+</option>
+                    <option value="3.75">A</option>
+                    <option value="3.50">A-</option>
+                    <option value="3.25">B+</option>
+                    <option value="3.00">B</option>
+                    <option value="2.75">B-</option>
+                    <option value="2.50">C+</option>
+                    <option value="2.25">C</option>
+                    <option value="2.00">D</option>
+                    <option value="0.00">F</option>
+                </select>
            </div>
 
            <div class="input-form">
                 <input type="number" name="credit4" placeholder="Credits" step="0.5" min="1" required>
-                <input type="number" name="gpa4" placeholder="Subject GPA" step="0.25" min="0" max="4" required>
+                <!-- <input type="number" name="gpa4" placeholder="Grade Point" step="0.25" min="0" max="4" required> -->
+                <select name="gpa4" id="combo-box" required>
+                    <option value="4.00">A+</option>
+                    <option value="3.75">A</option>
+                    <option value="3.50">A-</option>
+                    <option value="3.25">B+</option>
+                    <option value="3.00">B</option>
+                    <option value="2.75">B-</option>
+                    <option value="2.50">C+</option>
+                    <option value="2.25">C</option>
+                    <option value="2.00">D</option>
+                    <option value="0.00">F</option>
+                </select>
            </div>
 
            <div>

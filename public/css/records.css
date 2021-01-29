@@ -154,8 +154,8 @@ h1 {
     }
     
   table.outlined tr{
-      border-top: 1px solid #9ba4b4;
-      border-bottom: 1px solid #9ba4b4;
+      border-top: 1px solid #d6e0f0;
+      border-bottom: 1px solid #d6e0f0;
     }
     table.outlined td{
         padding: 15px;
@@ -166,7 +166,8 @@ h1 {
       width: fit-content;
       text-align: center;
       padding: 15px;
-      border-bottom: 2px solid #9ba4b4;
+      border-top: 2px solid #d6e0f0;
+      border-bottom: 2px solid #d6e0f0;
   }
   #table-div{
       padding-right: 0px;
