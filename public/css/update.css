@@ -154,15 +154,18 @@ body {
 
 .btn:hover {
     backdrop-filter: blur(300px);
-    text-shadow: 1px 1px yellowgreen;
+    text-shadow: 1px 1px #5fdde5;
     /* font-size: 22px; */
-    border: 4px solid white;
+    border-color: white;
+    border-width: 3px;
 }
 
 .btn {
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 20px;
     margin: 20px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: fit-content;
     height: 40px;
     border-radius: 5px;
