@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url('/css/calculator.css') }}" />
-    <title>Document</title>
+    <title>CGPA Calculator</title>
 </head>   
 <body>
     <header class="header">
@@ -31,27 +31,57 @@
        <form method="post" action="show_result">
             @csrf
            <div class="input-form-semester">
-               <input type="text" name="semester" placeholder="Current Semester">
+               <input type="text" name="semester" placeholder="Current Semester" required>
+               <!-- <select name="courses" id="combo-box">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select> -->
+           </div>
+
+           <!--
+           $courseNumber;
+                @if(isset( $_GET['courses']))  
+                
+           @for($i=1; $i<= $_GET['courses']; $i++)
+                {
+                    <div class="input-form">
+                    <input type="number" name="credit1" placeholder="Credits" step="0.5" min="1">
+                    <input type="number" name="gpa1" placeholder="Subject GPA" step="0.25" min="0" max="4">
+                    </div>
+                }
+            @endfor
+            @endif -->
+           <div class="input-form">
+                <input type="number" name="credit1" placeholder="Credits" step="0.5" min="1" required>
+                <input type="number" name="gpa1" placeholder="Subject GPA" step="0.25" min="0" max="4" required>
            </div>
 
            <div class="input-form">
-                <input type="number" name="credit1" placeholder="Credits" step="0.5" min="1">
-                <input type="number" name="gpa1" placeholder="Subject GPA" step="0.25" min="0" max="4">
+                <input type="number" name="credit2" placeholder="Credits" step="0.5" min="1" required>
+                <input type="number" name="gpa2" placeholder="Subject GPA" step="0.25" min="0" max="4" required>
            </div>
 
            <div class="input-form">
-                <input type="number" name="credit2" placeholder="Credits" step="0.5" min="1">
-                <input type="number" name="gpa2" placeholder="Subject GPA" step="0.25" min="0" max="4">
+                <input type="number" name="credit3" placeholder="Credits" step="0.5" min="1" required>
+                <input type="number" name="gpa3" placeholder="Subject GPA" step="0.25" min="0" max="4" required>
            </div>
 
            <div class="input-form">
-                <input type="number" name="credit3" placeholder="Credits" step="0.5" min="1">
-                <input type="number" name="gpa3" placeholder="Subject GPA" step="0.25" min="0" max="4">
-           </div>
-
-           <div class="input-form">
-                <input type="number" name="credit4" placeholder="Credits" step="0.5" min="1">
-                <input type="number" name="gpa4" placeholder="Subject GPA" step="0.25" min="0" max="4">
+                <input type="number" name="credit4" placeholder="Credits" step="0.5" min="1" required>
+                <input type="number" name="gpa4" placeholder="Subject GPA" step="0.25" min="0" max="4" required>
            </div>
 
            <div>
