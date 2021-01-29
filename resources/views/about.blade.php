@@ -24,10 +24,10 @@
             <h1>CalculateCGPA</h1>
         </div>
         <div>
-            <h3 id = "details">is for calculating your result CGPA(Cumulative Grade Points Average) 
-            from given Letter Grade. It will also help you to find the Grade Point. You can save your 
-            result informations for future uses. CalculateCGPA will let you update and delete your 
-            informations also.&#160; &#160; &#169; Made by <i>S.m. Tahmin Kabir Raiyan.</i></h3>
+            <h3 id = "details">Is For Calculating Your Result CGPA(Cumulative Grade Points Average) 
+            From Given Letter Grade. It Will Also Help You To Find The Grade Point. You Can Save Your 
+            Result Informations For Future Uses. CalculateCGPA Will Let You Update And Delete Your 
+            Informations Also.&#160; &#160; &#169; made by <i>S.m. Tahmin Kabir Raiyan.</i></h3>
         </div>
         <div id = "quote">
             <h2><i>"There are no secrets to success. 
