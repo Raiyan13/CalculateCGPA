@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\resultInfo;
 use Illuminate\Http\Request;
 use App\Helpers\Helper;
-use Session;
+use Illuminate\Support\Facades\Session;
 
 class ResultInfoController extends Controller
 {
@@ -47,7 +47,9 @@ class ResultInfoController extends Controller
         $resultInfo->save();
 
         Session::flash('saved', 'This is a save message!');
-        return view('records')->with('allResult',resultInfo::all());
+        return redirect('show_records')->with('allResult',resultInfo::all());
+        Session::destroy('saved');
+        Session::flush();
     }
 
     /**

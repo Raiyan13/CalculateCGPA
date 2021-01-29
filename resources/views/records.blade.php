@@ -18,6 +18,9 @@
             </ul>
         </div>
         @if(Session::has('saved'))
+        @php
+            Session::forget('saved');
+        @endphp
         <div class="saved">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             <strong>Saved Successfully!</strong> Result Saved Successfully To Records.
