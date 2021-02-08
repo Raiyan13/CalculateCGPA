@@ -133,7 +133,7 @@ body {
 }
 
 .input-form-semester input {
-    width: 355px;
+    width: 350px;
     height: 40px;
     margin-left: 5px;
     margin-bottom: 7px;
@@ -155,6 +155,35 @@ body {
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 20px;
     margin: 20px 0px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    backdrop-filter: blur(30px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-form-btn {
+    display: inline;
+    width: 300px;
+    margin-left: 7px;
+}
+
+#add-form {
+    background-color: green;
+}
+
+#del-form {
+    background-color: #FF0000;
+}
+
+.form-btn {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 20px;
+    margin: 10px 10px;
     width: 150px;
     height: 40px;
     border-radius: 5px;

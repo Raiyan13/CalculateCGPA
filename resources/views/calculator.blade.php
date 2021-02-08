@@ -135,6 +135,11 @@
                     </select>
                 </div>
 
+                <div class="input-form-btn">
+                    <button class="form-btn" id = "del-form">Delete Course</button>
+                    <button class="form-btn" id = "add-form">Add Course</button>
+                </div>
+
                 <div>
                     <button class="btn" type="submit">Calculate</button>
                 </div>
