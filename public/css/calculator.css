@@ -83,7 +83,7 @@ body {
 
 .all-input-form {
     position: absolute;
-    margin-top: 70px;
+    margin-top: 40px;
     padding-right: 5px;
     /* margin-right: 33px; */
     /* margin: 100px auto; */
@@ -173,10 +173,18 @@ body {
 }
 
 #add-form {
-    background-color: green;
+    background-color: transparent;
 }
 
 #del-form {
+    background-color: transparent;
+}
+
+#add-form:hover {
+    background-color: green;
+}
+
+#del-form:hover {
     background-color: #FF0000;
 }
 
@@ -238,4 +246,12 @@ table.outlined th {
     height: fit-content;
     overflow: hidden;
     width: fit-content;
+}
+
+#input-table-div {
+    overflow: hidden;
+}
+
+#input-table-div:hover {
+    overflow: auto;
 }
